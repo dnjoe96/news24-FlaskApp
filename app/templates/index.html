@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="jumbotron text-center">
+    <h1>Welcome to News24</h1>
+<p class="lead"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore fugiat iste, temporibus fugit velit itaque sit laborum ut, ipsa similique maiores aut, aperiam corporis earum. Totam vitae minima dicta voluptates.</p>
+</p>
+    {% if session.logged_in == NULL %}
+    <a href="/register" class="btn btn-primary btn-lg">Register</a>
+    <a href="/login" class="btn btn-primary btn-lg">Login</a>
+    {% endif %}
+
+</div>
+{% endblock %}
